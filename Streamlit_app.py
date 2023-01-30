@@ -10,8 +10,8 @@ my_object=pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fru
 my_object=my_object.set_index('Fruit')
 
 # streamlit.multiselect("pick some fruits:",list(my_object.index))
-streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
-streamlit.dataframe(my_object)
+# streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
+# streamlit.dataframe(my_object)
 
 fruits_selected=streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
 fruits_to_show =my_object.loc[fruits_selected]
