@@ -9,5 +9,6 @@ import pandas as pd
 my_object=pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
 my_object=my_object.set_index('Fruit')
 
-streamlit.multiselect("pick some fruits:",list(my_object.index))
+# streamlit.multiselect("pick some fruits:",list(my_object.index))
+streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
 streamlit.dataframe(my_object)
