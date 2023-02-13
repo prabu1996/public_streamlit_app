@@ -1,9 +1,9 @@
 import streamlit
-import snowflake.connector
+# import snowflake.connector
 import streamlit
 import pandas
 import requests
-import snowflake.connector
+# import snowflake.connector
 from urllib.error import URLError
 
 # streamlit.title("Surya Kumar yadav")
