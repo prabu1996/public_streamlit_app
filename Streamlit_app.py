@@ -18,13 +18,13 @@ streamlit.text('hard-boiled egg')
 streamlit.text('chocolates')
 streamlit.header('🍇build your 🍌🥭first smoothie🍇')
 
-# import pandas as pd
+import pandas as pd
 
-# # my_object=pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
-# # my_object=my_object.set_index('Fruit')
+my_object=pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
+my_object=my_object.set_index('Fruit')
 
-# my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-# my_fruit_list = my_fruit_list.set_index('Fruit')
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # # streamlit.multiselect("pick some fruits:",list(my_object.index))
 # # streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
