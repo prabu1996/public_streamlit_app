@@ -1,4 +1,5 @@
 import streamlit
+import snowflake.connector
 
 streamlit.title("Surya Kumar yadav")
 streamlit.header("Indian cricketer")
