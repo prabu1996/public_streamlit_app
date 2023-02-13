@@ -26,13 +26,13 @@ my_object=my_object.set_index('Fruit')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-# # streamlit.multiselect("pick some fruits:",list(my_object.index))
-# # streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
-# # streamlit.dataframe(my_object)
+streamlit.multiselect("pick some fruits:",list(my_object.index))
+streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
+streamlit.dataframe(my_object)
 
-# fruits_selected=streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
-# fruits_to_show =my_object.loc[fruits_selected]
-# streamlit.dataframe(fruits_to_show)
+fruits_selected=streamlit.multiselect("pick some fruits:",list(my_object.index),['Cantaloupe','Grapes'])
+fruits_to_show =my_object.loc[fruits_selected]
+streamlit.dataframe(fruits_to_show)
 
 
 # import requests
